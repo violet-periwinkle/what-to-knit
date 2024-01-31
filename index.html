@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    add later:
+    -knit flat or in the round
+    -needed tools
+    -difficulty and size - up to or exclusive
+    -fiber type (warmth)
+
+    -more projects
+    -more techniques
+-->
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What to knit</title>
+</head>
+
+<body>
+    <h1>What should I knit?</h1>
+    <form>
+        <fieldset>
+            <legend>project difficulty</legend>
+            <input type="radio" id="easy" name="difficulty" value="easy">
+            <label for="easy">easy</label>
+            <input type="radio" id="moderate" name="difficulty" value="moderate">
+            <label for="moderate">moderate</label>
+            <input type="radio" id="hard" name="difficulty" value="hard">
+            <label for="hard">hard</label>
+        </fieldset>
+        <fieldset>
+            <legend>project size</legend>
+            <input type="radio" id="small" name="size" value="small">
+            <label for="small">small</label>
+            <input type="radio" id="medium" name="size" value="medium">
+            <label for="medium">medium</label>
+            <input type="radio" id="large" name="size" value="large">
+            <label for="large">large</label>
+        </fieldset>
+        <fieldset>
+            <legend>using more than one yarn color?</legend>
+            <input type="radio" name="multipleColors" value="yes">yes</input>
+            <input type="radio" name="multipleColors" value="no" checked>no</input>
+        </fieldset>
+    </form>
+    <button id="genBtn">tell me!</button>
+    <p id="sentence">You should knit <span id="project">something</span>!</p>
+</body>
+
+</html>
